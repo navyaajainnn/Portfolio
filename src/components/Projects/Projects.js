@@ -18,16 +18,6 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bank}
-              isBlog={false}
-              title="YouTube Video Summarizer"
-              description="Developed an AI-powered YouTube video transcription and summarization tool, enabling users to extract key insightsefficiently."
-              ghLink="https://github.com/navyaajainnn/YouTube-Video-Summarizer-"
-              demoLink=""              
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
