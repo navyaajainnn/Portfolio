@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import pdf from "../../Assets/Navya Fulfagar.pdf";  
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
@@ -18,18 +17,12 @@ function ResumeNew() {
     <Container fluid className="resume-section" style={{ position: "relative", minHeight: "100vh" }}>
       <Particle />
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          minHeight: "80vh", // Adjust height as needed
-          padding: "20px",
-        }}
-      >
-        <Document file={pdf}>
-          <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-        </Document>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "80vh", padding: "20px" }}>
+        <Document file={`${window.location.origin}/Assets/resume.pdf`}>
+  <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+</Document>
+
+
       </div>
     </Container>
   );
