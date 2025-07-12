@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             I am currently a fresher graduating in 2026.
             <br />
-            I am a B.Tech student at Guru Gobind Singh Indraprastha University.
+            I am pursuing B.Tech in CSE at Guru Gobind Singh Indraprastha University.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
